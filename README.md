@@ -32,6 +32,6 @@
 
 ### PROJETO COLOCADO EM WEBHOST GRATUITO 
 
-Seu navegador pode mostrar como não seguro.
+Seu navegador pode mostrar um falso alerta.
 
 <a href="https://americanasreplica.000webhostapp.com/index.php">Clique Aqui</a>
