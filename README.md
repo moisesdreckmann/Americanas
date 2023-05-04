@@ -20,6 +20,8 @@
 * Ajax para efeito de contador
 * API para pegar Cep
 
+#Algumas imagens de demonstração
+
 <div>
 <img src="images/demo/Screenshot_1.png" width="400px" height="200px"/>
 <img src="images/demo/Screenshot_2.png" width="400px" height="200px"/>
