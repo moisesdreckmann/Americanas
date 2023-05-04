@@ -19,9 +19,11 @@
 * Ajax para botões de compra
 * Ajax para efeito de contador
 * API para pegar Cep
- 
-<img src="images/demo/Screenshot_1.png" width="40px" height="40px"/>
-<img src="images/demo/Screenshot_2.png" width="40px" height="40px"/>
-<img src="images/demo/Screenshot_3.png" width="40px" height="40px"/>
-<img src="images/demo/Screenshot_4.png" width="40px" height="40px"/>
-<img src="images/demo/Screenshot_5.png" width="40px" height="40px"/>
+
+<div>
+<img src="images/demo/Screenshot_1.png" width="200px" height="200px"/>
+<img src="images/demo/Screenshot_2.png" width="200px" height="200px"/>
+<img src="images/demo/Screenshot_3.png" width="200px" height="200px"/>
+<img src="images/demo/Screenshot_4.png" width="200px" height="200px"/>
+<img src="images/demo/Screenshot_5.png" width="200px" height="200px"/>
+</div>
