@@ -30,4 +30,8 @@
 <img src="images/demo/Screenshot_5.png" width="400px" height="200px"/>
 </div>
 
-### PROJETO COLOCADO EM WEBHOST GRATUITO <a href="https://americanasreplica.000webhostapp.com/index.php">Clique Aqui para ver</a>
+### PROJETO COLOCADO EM WEBHOST GRATUITO 
+
+Seu navegador pode mostrar como não seguro.
+
+<a href="https://americanasreplica.000webhostapp.com/index.php">Clique Aqui</a>
