@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+.logoImg {
+    margin-inline: 12px;
+}
+
+.submenu {
+    width: 190px;
+    height: 210px;
+}
+
+.submenu > li:first-child {
+    display: none;
+}
+
+.promoNoteimg1 {
+    display: none;
+}
+
+.prodImgUnico {
+    width: 350px;
+    height: 330px;
+}
+
+.postagemTitleUnico {
+    font-size: 24px;
+}
+
+.postagemDescUnico {
+    font-size: 14px;
+}
+
+.postagemPrecoUnico {
+    font-size: 22px;
+}
+
+.postagemPrecoUnico2 {
+    font-size: 14px;
+}
+
+.btncompraUnico {
+    width: 230px;
+    height: 53px;
+    font-size: 14px;
+}

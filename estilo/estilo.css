@@ -1,0 +1,1439 @@
+@charset "utf-8";
+
+@keyframes efeitoQt {
+    0% {
+        transform: scale(0.7);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes load {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --headerColor:rgb(245, 16, 51);
+    --countColor:rgb(169, 7, 5);
+    --mainColor:rgb(241, 240, 240);
+    --footerColor:rgb(231, 227, 227);
+    --textColor: rgb(102, 103, 103);
+    --textColor2: rgb(50, 50, 51);
+    --btnColor: rgb(77, 72, 97);
+    --bodyColor: rgb(246, 247, 247);
+    --submenuResponsiveColor: rgb(237, 236, 236);
+}
+
+body {
+    background-color: var(--bodyColor);
+    width: 100vw;
+}
+
+.bodyindex {
+    background-color: var(--mainColor);
+}
+
+header {
+    width: 100vw;
+    height: 120px;
+    background-color: var(--headerColor);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.142);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header3 {
+    justify-content: flex-start;
+    padding-inline: 60px;
+    margin-bottom: 0;
+}
+
+.header4 {
+    justify-content: space-between;
+    padding-inline: 60px;
+    margin-bottom: 0;
+}
+
+.logoImg  {
+    width: 150px;
+    height: 32px;
+}
+
+.logoImg2 {
+    width: 160px;
+    height: 58px;
+}
+
+.mainCadastros {
+    max-width: 900px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.mainClientes, .mainCarrinho {
+    width: 100vw;
+    min-height: 800px;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.container {
+    width: 800px;
+    margin: auto;
+    border-radius: 2px 2px;
+    margin-bottom: 20px;
+    background-color: var(--bodyColor);
+}
+
+.container2 {
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: var(--mainColor);
+    border-radius: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-inline: 10px;
+    padding-block: 50px;
+}
+
+.containerTitle {
+    width: 800px;
+    height: 35px;
+    background-color: var(--headerColor);
+    color: var(--mainColor);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 1px 0 2px rgba(0, 0, 0, 0.301),
+    -1px 0 2px rgba(0, 0, 0, 0.301);
+}
+
+.containerTitle > p {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.formColor {
+    background-color: var(--mainColor);
+    color: var(--textColor);
+}
+
+.containerBody {
+    width: 800px;
+    font-weight: 600;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    padding-inline: 20px;
+    margin-bottom: 15px;
+}
+
+.containerBodyEstendido {
+    height: 120px;
+    
+}
+
+.containerBox {
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.172),
+                -1px -1px 2px rgba(0, 0, 0, 0.172);
+}
+
+.wrapperBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 300px;
+    height: 100px;
+}
+
+.containerBody span {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+input, select {
+    padding: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+}
+
+.largeInput {
+    width: 300px;
+    height: 30px;
+}
+
+input[name="precoprod"], input[name="alterapreco"] {
+    text-align: end;
+}
+
+textarea {
+    width: 480px;
+    height: 100px;
+    resize: none;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.btn {
+    width: 70px;
+    height: 28px;
+    font-size: 9px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--headerColor);
+    margin-right: 5px;
+}
+
+.btn:hover {
+    background-color: rgb(254, 32, 66);
+    color: white;
+}
+
+.btnPurple {
+    background-color: var(--btnColor);
+    
+}
+
+.btnPurple:hover {
+    background-color: rgb(88, 83, 106);
+}
+
+.prodWrapper {
+    width: 80px; height: 40px;
+    border-radius: 2px 2px;
+}
+
+.prodlabel {
+    width: 80px; height: 40px;
+    display: block;
+    position: relative;
+    background-color: var(--cor1);
+}
+
+.prodArquivo {
+    width: 80px; height: 40px;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.inputProd {
+    width: 80px; height: 40px;
+    position: absolute;
+    inset: 0;
+    z-index: 10;
+    opacity: 0;
+}
+
+footer {
+    width: 100vw;
+    height: 120px;
+    background-color: var(--footerColor);
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+footer > p {
+    font-size: 16px;
+    color: var(--textColor2);
+    margin-inline: 10px;
+    margin-top: 10px;
+}
+
+.containerBuscador {
+    border-radius: 6px;
+    width: 40vw;
+    height: 40px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.183),
+    -1px -1px 3px rgba(0, 0, 0, 0.096);
+    position: relative;
+}
+
+.buscador {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+#btnbusca {
+    display: none;
+}
+
+
+.fa-magnifying-glass {
+    position: absolute;
+    top: 21%; right: 3%;
+    cursor: pointer;
+    font-size: 22px;
+    color: var(--headerColor);
+}
+
+.containerProd {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 220px;
+    height: 450px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(58, 58, 58, 0.050),
+    -1px -1px 8px rgba(58, 58, 58, 0.050);   
+}
+
+.containerProd div {
+    padding: 10px;
+}
+
+.prodArquivoCliente {
+    width: 220px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    object-fit: contain;
+    object-position: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.postagemContainer1 {
+    height: 55px;
+}
+
+.postagemContainer2 {
+    height: 85px;
+}
+
+.postagemContainer3 {
+    height: 40px;
+}
+
+.postagemTitle {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--textColor2);
+    pointer-events: none;
+}
+
+.postagemDesc {
+    font-size: 13.5px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.postagemPreco {
+    font-size: 16.5px;
+    font-weight: bolder;
+    color: var(--textColor2);
+    margin-top: 5px;
+}
+
+.postagemButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btncompra {
+    width: 170px;
+    height: 33px;
+}
+
+.divLogin {
+    color: var(--bodyColor);
+    width: 240px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTextoLogin {
+    width: 180px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.divTextoSpanName {
+    justify-content: flex-start;
+}
+
+.divTextoLogin::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: -3%;
+    width: 50px;
+    height: 20px;
+    background-color: white;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    display: none;
+    z-index: 1;
+}
+
+.fa-circle-user {
+    font-size: 33px;
+    margin-right: 10px;
+}
+
+.fa-angle-down {
+    margin-left: 8px;
+    margin-top: 2px;
+}
+
+.divSub-login {
+    width: 240px;
+    height: 240px;
+    background-color: white;
+    position: absolute;
+    top: 130%;
+    border-radius: 15px;
+    display: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.172),
+    0 0 4px rgba(0, 0, 0, 0.172);
+    padding-inline: 25px;
+    padding-block: 35px;
+    cursor: auto;
+}
+
+.divSub-login > p {
+    font-size: 13.5px;
+    color: var(--textColor);
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.divLogin:hover .divSub-login{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.divLogin:hover .divTextoLogin::after {
+    display: inline-block;
+}
+
+.divShop {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+}
+
+.fa-cart-shopping {
+    color: var(--bodyColor);
+    font-size: 33px;
+    cursor: pointer;
+    position: relative;
+}
+
+.quantidadeItens {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: -25%; left: 104%; 
+    color: var(--mainColor);
+    background-color: var(--countColor);
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: efeitoQt .3s ease-in .1s normal forwards;
+}
+
+.fa-cart-shopping:hover {
+    transform: scale(1.1);
+}
+
+.redirecionaBtnlog {
+    width: 190px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--headerColor);
+    margin-top: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.142);
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.btnDeletarPerfil {
+    width: 170px;
+    margin-inline: auto;
+}
+
+.redirecionaBtnlog:hover {
+    background-color: rgb(254, 32, 66);
+}
+
+.redirecionaBtncad {
+    width: 190px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: bold;
+    color: var(--headerColor);
+    cursor: pointer;
+    border-radius: 5px 5px;
+    text-align: center;
+    border: none;
+    background-color: white;
+    border: 2px solid var(--headerColor);
+    margin-top: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.142);
+    align-self: flex-end;
+    margin-right: 10px;
+}
+
+.btnAlterarPerfil {
+    width: 170px;
+    margin-inline: auto;
+}
+
+.redirecionaBtncad:hover {
+    border: 2px solid rgb(247, 93, 116);
+    color: rgb(247, 93, 116);
+}
+
+.fundoCinza, .fundoCinza2 {
+    width: 100%; height: 100%;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -10;
+    opacity: 0;
+    transition: all 0.1s linear 0s;
+}
+
+.fundoCinza2 {
+    transition: all 0.3s linear 0s; 
+}
+
+.sectionLogin, .sectionLogin2 {
+    width: 400px;
+    margin: auto;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.sectionLogin h1, .sectionLogin2 h1 {
+    font-size: 32px;
+    text-align: center;
+    color: rgba(50, 50, 51, 0.826);
+    margin-bottom: 20px;
+}
+
+.sectionLogin p, .sectionLogin2 p {
+    color: var(--textColor);
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.sectionLogin2 p {
+    margin-bottom: 25px;
+}
+
+.formCadastro {
+    width: 380px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formLogin {
+    width: 380px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formLoginAlteracao {
+    width: 380px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.formLogin__input {
+    width: 360px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.containerEyePass {
+    width: 360px;
+    height: 50px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: white;
+}
+
+.inputEyePass {
+    width: 358px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    padding: 10px;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+.fa-eye {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    color: var(--headerColor);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 14.2px;
+}
+
+.fa-eye-slash {
+    position: absolute;
+    top: 0;
+    right: 2%;
+    color: var(--headerColor);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 14.2px;
+}
+
+
+.esqueceu{
+    align-self: flex-end;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.spanMSG, .spanMSG2, .spanMSG3 {
+    font-size: 16px;
+    color: var(--headerColor);
+    margin-bottom: 10px;
+}
+
+.spanCadastro {
+    color: var(--textColor);
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.spanCadastro2 {
+    color: var(--textColor);
+    font-size: 16px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+::placeholder {
+    color: rgba(102, 103, 103, 0.669);
+}
+
+.containerAlteracaoConta {
+    width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner {
+    width: 100vw;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerImgGrande {
+    max-width: 100%;
+    height: 50px;
+    margin: auto;
+}
+
+.bannerImgMedio {
+    max-width: 60%;
+    height: 50px;
+    margin: auto;
+}
+
+.bannerImgPequeno {
+    max-width: 40%;
+    height: 50px;
+    margin: auto;
+}
+
+.carouselExampleControls, .carousel-inner {
+    width: 100vw;
+}
+
+.sectionCarrinho {
+    width: 96vw;
+    margin: auto;
+    margin-top: 50px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.105);
+}
+
+.formCarrinho {
+    width: 96vw;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.119);
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 200px 2fr 1fr 2fr;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    align-items: center;
+}
+
+.btnRemoveItemCarrinho {
+    background-color: white;
+    border: none;
+    grid-column: 1/2;
+}
+
+.removeItem {
+    color: var(--headerColor);
+    font-size: 20px;
+    cursor: pointer;
+    padding: 40px;
+}
+
+.removeItem:hover {
+    transform: scale(1.2);
+}
+
+.carrinhoImage {
+    grid-column: 2/3;
+    height: 120px;
+}
+
+.carrinhoTitle {
+    justify-self: start;
+    grid-column: 3/4;
+}
+
+.carrinhoQt {
+    grid-column: 4/5;
+}
+
+.carrinhoPreco {
+    grid-column: 5/6;
+}
+
+.containerFinalizarCompra {
+    width: 96vw;
+    height: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.119);
+    background-color: white;
+}
+
+.containerVazio {
+    height: 200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.containerVazio p {
+    color: var(--textColor);
+}
+
+.formFinal {
+    width: 96vw;
+    height: 200px;
+    font-size: 16.5px;
+    font-weight: bolder;
+    color: var(--textColor2);
+    padding-inline: 10px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 200px 2fr 1fr 2fr;
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.formFinal > div {
+    grid-column: 1/4;
+}
+
+.spanTotal {
+    padding-top: 50px;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.spanPrecoFinal {
+    padding-top: 50px;
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+
+.btnFinalizarCompra {
+    width: 185px;
+    height: 40px;
+    font-size: 13.5px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--headerColor);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.142);
+    grid-column: 5/6;
+    grid-row: 2/3;
+    align-self: center;
+}
+
+.btnFinalizarCompra:hover {
+    background-color: rgb(254, 32, 66);
+}
+
+.c-loading {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid rgb(187, 187, 187);
+    border-top: 4px solid var(--headerColor);
+    border-bottom: 4px solid var(--headerColor);
+    animation: load 1s infinite;
+    display: none;
+    margin-bottom: 10px;
+}
+
+nav {
+    width: 100vw; height: 40px;
+    background-color: white;
+    padding-top: 8px;
+    padding-inline: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.132);
+    margin-bottom: 7px;
+    border-top: .3px solid rgba(0, 0, 0, 0.187);
+    position: relative;
+}
+
+.menu {
+    height: 40px;
+    padding: 0;
+    margin-bottom: 0;
+    font-size: 15px;
+    text-shadow: .5px .5px 0px rgba(0, 0, 0, 0.196);
+}
+
+.menuli {
+    height: 28px;
+    float: left;
+    margin-right: 25px;   
+    cursor: pointer;
+    color: var(--textColor);
+    padding-top: 5px;
+    position: relative;
+}
+
+.menuli:hover {
+    color: var(--headerColor);
+    border-bottom: 3px solid var(--headerColor);
+    box-sizing: content-box;
+}
+
+.submenu {
+    width: 450px; height: 350px;
+    position: absolute;
+    top: 109%;
+    left: 0;
+    background-color: white;
+    display: none;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 0 0 15px 15px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.196);
+}
+
+.menuli:hover .submenu {
+    display: block;
+}
+
+.submenu > li {
+    width: 150px; height: 35px;
+    color: var(--textColor);
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+.submenu > li a {
+    position: absolute;
+    inset: 0;
+}
+
+.submenu > li a:link, .submenu > li a:visited, .submenu > li a:active {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.submenu > li a:hover {
+    color: var(--headerColor);
+}
+
+.submenu li:first-child {
+    float: right;
+    position: absolute;
+    right: 15%;
+}
+
+.containerGoogleLogin p {
+    border-bottom: 1px solid black;
+    padding-block: 10px;
+    color: var(--textColor);
+    text-align: center;
+    font-size: 16px;
+}
+
+.navHamburguer{
+    width: 200px; height: 33px;
+    color: var(--textColor);
+    top: 100%;
+    cursor: pointer;
+    padding-bottom: 8px;
+    display: none;
+}
+
+.fa-chevron-down, .fa-chevron-up {
+    font-size: 12px;
+}
+
+.promoNotesContainer {
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.h1Notes, .h1Notes2 {
+    font-size: 32px;
+    color: rgba(50, 50, 51, 0.826);
+    margin-block: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.paragrafoNotes {
+    color: var(--textColor);
+    font-size: 16px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 90vw;
+}
+
+.containerPaginaProduto {
+    display: flex;
+    flex-direction: row;
+}
+
+.listagemProdutos {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.containerProdListagem {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 8px rgba(58, 58, 58, 0.050),
+    -1px -1px 8px rgba(58, 58, 58, 0.050);
+    width: 98%;
+    height: 220px;
+    margin-block: 10px;
+    margin-left: 10px;
+}
+
+
+.containerProdListagem > form {
+    width: 100%;
+    height: 220px;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr) 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    cursor: pointer;
+}
+
+.prodArquivoClientecat1 {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 220px;
+    height: 200px;
+    border-radius: 20px 20px 0 0;
+    object-fit: contain;
+    object-position: center;
+}
+
+.postagemContainer1cat1 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    align-self: end;
+    justify-self: start;
+}
+
+.postagemContainer2cat1 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    align-self: start;
+    
+}
+
+.postagemContainer3cat1 {
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+.postagemTitlecat1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--textColor2);
+}
+
+.postagemPrecocat1 {
+    font-size: 18.5px;
+    font-weight: bolder;
+    color: var(--countColor);
+    margin-top: 5px;
+    pointer-events: none;
+}
+ 
+.containerListaMarcasNotes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    margin-bottom: 40px;
+}
+
+.containerListaMarcasNotes > img {
+    width: 200px;
+    height: 100px;
+}
+
+.filtrosProdutos1 {
+    margin-left: 25px;
+    width: 320px;  
+    margin-right: 10px;
+    padding-left: 10px;
+    background-color: rgba(255, 255, 255, 0.491);
+}
+
+.filtrosProdutos1 h3 {
+    font-size: 16px;
+    color: rgba(50, 50, 51, 0.826);
+    margin-block: 20px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.filtrosProdutos1 label {
+    color: var(--textColor);
+    display: block;
+    font-size: 15px;
+    padding-bottom: 13px;
+    cursor: pointer;
+}
+
+.filtrosProdutos1 p {
+    color: var(--textColor);
+    font-size: 15px;
+    text-decoration: underline;
+    margin-bottom: 40px;
+    cursor: pointer;
+}
+
+.filtrosProdutos2 {
+    display: none;
+}
+
+.containerProdUnico {
+    width: 90vw;
+    height: 550px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(58, 58, 58, 0.050),
+    -1px -1px 8px rgba(58, 58, 58, 0.050);  
+}
+
+.containerProdUnico > form {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(4, 1fr);
+    width: 90vw;
+    height: 550px;
+    padding-inline: 50px;
+}
+
+.prodImgUnico {
+    grid-column: 1/2;
+    grid-row: 1/5;
+    object-fit: contain;
+    object-position: center;
+    width: 400px;
+    height: 380px;
+    justify-self: center;
+    margin-top: 50px;
+}
+
+.postagemContainerUnico {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: end;
+}
+
+.postagemTitleUnico {
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--textColor);
+    pointer-events: none;
+}
+
+.postagemContainer2Unico {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: start;
+}
+
+.postagemDescUnico {
+    font-size: 16px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.postagemContainer3Unico {
+    grid-column: 2/3;
+    grid-row: 3/4;
+    justify-self: end;
+    align-self: end;
+    margin-right: 20px;
+}
+
+.postagemPrecoUnico {
+    font-size: 26px;
+    font-weight: bolder;
+    color: var(--countColor);
+}
+
+.postagemPrecoUnico2 {
+    font-size: 16px;
+    color: var(--textColor);
+    font-weight: 500;
+}
+
+.postagemButtonUnico {
+    grid-column: 2/3;
+    grid-row: 4/5;
+    justify-self: end;
+    align-self: center;
+    margin-right: 10px;
+}
+
+.btncompraUnico {
+    width: 270px;
+    height: 53px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px 5px;
+    text-align: center;
+    border: none;
+    background-color: var(--headerColor);
+    word-spacing: 5px;
+}
+
+.containerTable {
+    width: 90vw;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 8px rgba(58, 58, 58, 0.050),
+    -1px -1px 8px rgba(58, 58, 58, 0.050);  
+}
+
+.containerSugeridos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.centralizaPrecoSugeridos {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--countColor);
+    font-size: 18px;
+}    
+
+.sugeridos {
+    width: 90vw;
+}
+
+.tittleSugeridos {
+    margin-left: 0;
+    padding-bottom: 20px;
+}
+
+.containerTable__title {
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    cursor: pointer;
+    
+}
+
+.containerTable__title > h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+.containerTable__title span i {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--textColor);
+}
+
+tr {
+    font-size: 16px;
+    color: var(--textColor);
+    font-weight: 500;
+    height: 40px;
+}
+
+td {
+    vertical-align: center;
+    padding-left: 10px;
+    font-size: 14px;
+}
+
+tr:nth-child(odd) {
+    background-color: rgb(242, 242, 242); 
+}
+
+.containerTable__table {
+    width: 90vw;
+    padding: 30px;
+    border-top: 1px solid rgba(0, 0, 0, 0.146);
+    display: none;
+
+}
+
+table {
+    width: 100%;
+    border-collapse: separate;
+}
+
+tr td:first-child {
+    width: 150px;
+}
+
+.enderecamento {
+    padding-block: 70px;
+    padding-left: 50px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.enderecamento input {
+    margin-bottom: 10px;
+}
+
+.endereco__1 {
+    color: var(--textColor);
+    font-size: 14px;
+}
+
+.endereco__2 {
+    padding-left: 100px;
+}
+
+.endereco__2 input {
+    margin-right: 20px;
+}
+
+.postagemTitleSugeridos {
+    font-size: 14.5px;
+    font-weight: 600;
+    color: var(--textColor2);
+    pointer-events: none;
+}
+
+.containerTable__table > p {
+    text-align: justify;
+    font-size: 16px;
+    color: var(--textColor);
+}
+
+.containerBannersCategorias {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.containerBannersCategorias > img {
+    width: 112px;
+    height: 173px;
+}
+
+.containerTable__table2 {
+    margin-bottom: 10px;
+    min-height: 100px;
+    padding: 10px;
+    background-color: rgb(242, 242, 242); 
+    font-size: 14px;
+    overflow-wrap: break-word;
+    box-shadow: 1px 1px 0px rgba(58, 58, 58, 0.050),
+    -1px -1px 0px rgba(58, 58, 58, 0.050);
+    color: var(--textColor2);
+}
+
+.pDateProduto {
+    font-size: 12px;
+    color: var(--textColor);
+}
+
+.containerTable__perguntas {
+    width: 90vw;
+    padding: 30px;
+}
+
+.containerTable__table3 {
+    width: 90vw;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-top: 0;
+}
+
+.containerTable__table3 > textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}

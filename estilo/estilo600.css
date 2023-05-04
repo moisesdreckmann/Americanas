@@ -1,0 +1,252 @@
+@charset "utf-8";
+
+header {
+    height: 160px;
+    display: grid;
+    grid-template-columns: 5% 2fr 1fr 1fr 5%;
+    grid-template-rows: 2fr 1fr;
+}
+
+.containerLogoImg {
+    width: 160px;
+    height: 32px;
+    justify-self: start;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.logoImg {
+    margin: 0;
+}
+
+.divLogin {
+    justify-self: center;
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+.boxBuscador {
+    justify-self: start;
+    grid-column: 2/5;
+    grid-row: 2/3;
+    
+}
+
+.containerBuscador {
+    width: 90vw;
+    margin-bottom: 10px;
+}
+
+.divShop {
+    justify-self: center;
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+
+.navHamburguer {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+.navigator {
+    padding: 0;
+    display: block;
+}
+
+.menu {
+    height: auto;
+    position: relative;
+    top: -3%;
+    left: 0;
+    z-index: 10;
+    padding: 0;
+    margin-top: 1px;
+    display: none;
+}
+
+.menuli {
+    width: 100vw; 
+    margin-right: 0;
+    background-color: white;
+    clear: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+    position: relative;
+    box-sizing: content-box;
+}
+
+.submenu {
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 0;
+    padding: 0;
+    z-index: 40;
+    background-color: white;
+    display: block;
+    transform: scale(0);
+    border-bottom: 5px solid var(--headerColor);
+}
+
+.submenu > li {
+    width: 100vw;
+    height: 40px;
+    position: relative;
+    background-color: var(--submenuResponsiveColor);
+}
+
+.submenu > li > a {
+    text-align: center;
+    padding-top: 8px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
+    background-color: rgb(245, 245, 245);
+}
+
+.submenu5 {
+    left: 0;
+}
+
+.menuli:hover {
+    color: var(--headerColor);
+    border-bottom: none;
+}
+
+.btnFinalizarCompra {
+    width: 135px;
+}
+
+.promoNoteimg4 {
+    display: none;
+}
+
+.h1Notes, .h1Notes2 {
+    font-size: 26px;
+}
+
+.paragrafoNotes {
+    font-size: 14px;
+}
+
+.containerProdUnico {
+    height: 600px;
+}
+
+.containerProdUnico > form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr repeat(3, 1fr) 2fr;
+    padding-inline: 25px;
+    height: 600px;
+}
+
+.prodImgUnico {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 280px;
+    height: 260px;
+    margin-top: 0;
+    justify-self: center;
+}
+
+.postagemContainerUnico {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: center;
+    align-self: start;
+}
+
+.postagemTitleUnico {
+    font-size: 20px;
+}
+
+.postagemContainer2Unico {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+}
+
+.postagemDescUnico {
+    font-size: 13px;
+}
+
+.postagemContainer3Unico {
+    grid-column: 1/2;
+    grid-row: 4/5;
+    justify-self: end;
+    align-self: end;
+    margin-right: 0;
+}
+
+.postagemPrecoUnico {
+    font-size: 18px;
+}
+
+.postagemPrecoUnico2 {
+    font-size: 13px;
+}
+
+.postagemButtonUnico {
+    grid-column: 1/2;
+    grid-row: 5/6;
+    justify-self: end;
+    align-self: center;
+    margin-right: 0;
+}
+
+.btncompraUnico {
+    width: 200px;
+    height: 53px;
+    font-size: 13px;
+}
+
+.containerTable__title > h1 {
+    font-size: 18px;
+}
+
+.enderecamento {
+    padding-left: 0;
+}
+
+.endereco__1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.endereco__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+.endereco__2 input {
+    margin-right: 0;
+}
+
+.containerVazio p {
+    font-size: 14px;
+}
+
+.centralizaPrecoSugeridos {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--countColor);
+    font-size: 18px;
+}  
+
+.containerTable__table > p {
+    font-size: 14px;
+}

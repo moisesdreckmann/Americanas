@@ -1,0 +1,174 @@
+@charset "utf-8";
+
+.containerBuscador {
+    width: 47vw;
+}
+
+.logoImg {
+    margin-inline: 0;
+}
+
+.divLogin {
+    width: 50px;
+    height: 40px;
+}
+
+.divSub-login {
+    width: 230px;
+}
+
+.divSub-login > p {
+    font-size: 12px;
+}
+
+.divShop {
+    width: 50px;
+}
+
+.divTextoLogin > span {
+    display: none;
+}
+
+.submenu5 {
+    left: -55px;
+}
+
+.removeItem {
+    padding: 20px;
+}
+
+.formCarrinho, .formFinal {
+    grid-template-columns: 1fr 0 2fr 50px 2fr;
+}
+
+.formCarrinho {
+    height: auto;
+}
+
+.carrinhoImage {
+    display: none;
+}
+
+.postagemTitle {
+    font-size: 12.5px;
+}
+
+.postagemPreco, .spanTotal, .spanPrecoFinal {
+    font-size: 14.5px;
+}
+
+.promoNoteimg5 {
+    display: none;
+}
+
+.filtrosProdutos1 {
+    display: none;
+}
+
+.filtrosProdutos2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.491);
+    width: 90vw;
+    margin: auto;
+    padding: 10px;
+}
+
+.filtrosProdutos2 select {
+    width: 140px;
+    height: 35px;
+    border: 1px solid rgba(0, 0, 0, 0.317);
+}
+
+
+.postagemTitlecat1 {
+    font-size: 18px;
+}
+
+.postagemPrecocat1 {
+    font-size: 16.5px;
+}
+
+.listagemProdutos {
+    padding-inline: 50px;
+}
+
+.containerProdListagem {
+    height: auto;
+    padding-inline: 30px;
+    margin-left: 0;
+}
+
+
+.containerProdListagem > form {
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px 50px 70px 50px;
+    height: auto;
+}
+
+.prodArquivoClientecat1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.postagemContainer1cat1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.postagemContainer2cat1 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.postagemContainer3cat1 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+
+.containerProdUnico > form {
+    padding-inline: 25px;
+}
+
+.prodImgUnico {
+    width: 280px;
+    height: 260px;
+}
+
+.postagemTitleUnico, .containerTable__title > h1 {
+    font-size: 20px;
+}
+
+.postagemDescUnico {
+    font-size: 13px;
+}
+
+.postagemPrecoUnico {
+    font-size: 18px;
+}
+
+.postagemPrecoUnico2 {
+    font-size: 13px;
+}
+
+.btncompraUnico {
+    width: 200px;
+    height: 53px;
+    font-size: 13px;
+}
+
+.containerTable__title span i {
+    font-size: 14px;
+}
+
+.centralizaPrecoSugeridos {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--countColor);
+    font-size: 18px;
+}    
