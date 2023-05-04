@@ -1,6 +1,6 @@
-# AmericanasReplica
+## AmericanasReplica
 
-#Site realizado em PDO com algumas funcionalidades:
+### Site realizado em PDO com algumas funcionalidades:
 
 * Funçoes Genericas
 * Pagina Notebooks
@@ -20,7 +20,7 @@
 * Ajax para efeito de contador
 * API para pegar Cep
 
-#Algumas imagens de demonstração
+### Algumas imagens de demonstração
 
 <div>
 <img src="images/demo/Screenshot_1.png" width="400px" height="200px"/>
@@ -30,4 +30,4 @@
 <img src="images/demo/Screenshot_5.png" width="400px" height="200px"/>
 </div>
 
-# PROJETO COLOCADO EM WEBHOST GRATUITO <a href="https://americanasreplica.000webhostapp.com/index.php">Clique Aqui para ver</a>
+### PROJETO COLOCADO EM WEBHOST GRATUITO <a href="https://americanasreplica.000webhostapp.com/index.php">Clique Aqui para ver</a>
