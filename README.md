@@ -4,7 +4,7 @@
 
 * Funçoes Genericas
 * Pagina Notebooks
-* Pagina de produto unico (Notebooks e index)
+* Pagina de produto unico (Notebooks e index) / passando informações codeproduto e categoria por URL por JS
 * Produtos recomendados, limitedrows
 * Perguntas sobre produto, ajax. Não envia vazio e so aparece form para logados
 * Ajax requisição assincrona de email (cadastro)
