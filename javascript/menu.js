@@ -1,42 +1,36 @@
-const menusli = document.querySelectorAll('.menuli')
+const menuPrincipal = document.querySelector('.navHamburguer2')
+menuPrincipal.addEventListener('click', mostrarMenu)
+
+const containerMenu = document.querySelector('.menu2')
+
+const menusli = document.querySelectorAll('.menuli2')
 
 menusli.forEach(menuli => {
-    menuli.addEventListener('click', mostrarSubmenu)
+    const submenu = menuli.querySelector('.submenu2')
+    const submenuHeight = submenu.scrollHeight
+    submenu.style.maxHeight = '0'
+
+    menuli.addEventListener('click', () => {
+        const outrosSubmenus = document.querySelectorAll('.submenu2')
+
+        outrosSubmenus.forEach(outroSubmenu => {
+            if (outroSubmenu !== submenu && outroSubmenu.style.maxHeight !== '0') {
+                outroSubmenu.style.maxHeight = '0'
+                outroSubmenu.parentNode.style.color = "rgb(102, 103, 103)"
+            }
+        });
+
+        if (submenu.style.maxHeight === '0px') {
+            submenu.style.maxHeight = submenuHeight + 'px'
+            menuli.style.color = "rgb(245, 16, 51)"
+        } else {
+            submenu.style.maxHeight = '0'
+            menuli.style.color = "rgb(102, 103, 103)"
+        }
+    });
 });
 
-function mostrarSubmenu(event) {
-    const evento = event.target
-    const submenu = evento.querySelector('.submenu')
 
-    if (submenu) {
-        if (submenu.style.transform === "scale(1)") {
-            submenu.style.transform = "scale(0)"
-            evento.style.color = "rgb(102, 103, 103)"
-        } else {
-            submenu.style.transform = "scale(1)"
-            evento.style.color = "rgb(245, 16, 51)"
-            evento.style.borderBottom = "1px solid rgba(0, 0, 0, 0.135)"
-        }
-        event.stopPropagation()
-    }
-
-    const subsAbertos = document.querySelectorAll(".submenu")
-    subsAbertos.forEach(sub => {
-        if (sub.style.transform === "scale(1)" && sub !== submenu) {
-            sub.style.transform = "scale(0)"
-            menusli.forEach(menuli => {
-                if (menuli != evento) {
-                    menuli.style.color = "rgb(102, 103, 103)"
-                }
-            });
-
-        }
-    })
-}
-
-const menuPrincipal = document.querySelector('.navHamburguer')
-menuPrincipal.addEventListener('click', mostrarMenu)
-const containerMenu = document.querySelector('.menu')
 
 function mostrarMenu(event) {
     const icon = menuPrincipal.querySelector('i.fa-chevron-down, i.fa-chevron-up')
@@ -44,19 +38,19 @@ function mostrarMenu(event) {
     if (icon.classList.contains('fa-chevron-down')) {
         icon.classList.remove('fa-chevron-down')
         icon.classList.add('fa-chevron-up')
-        containerMenu.style.display = "block"
+        containerMenu.style.maxHeight = "800px"
         menuPrincipal.style.color = "rgb(245, 16, 51)"
     } else {
         icon.classList.remove('fa-chevron-up')
         icon.classList.add('fa-chevron-down')
-        containerMenu.style.display = "none"
+        containerMenu.style.maxHeight = "0"
         menuPrincipal.style.color = "rgb(102, 103, 103)"
     }
 
-    const subsAbertos = document.querySelectorAll(".submenu")
+    const subsAbertos = document.querySelectorAll(".submenu2")
     subsAbertos.forEach(sub => {
-        if (sub.style.transform === "scale(1)") {
-            sub.style.transform = "scale(0)"
+        if (sub.style.maxHeight) {
+            sub.style.maxHeight = "0"
             menusli.forEach(menuli => {
                 menuli.style.color = "rgb(102, 103, 103)"
             })
