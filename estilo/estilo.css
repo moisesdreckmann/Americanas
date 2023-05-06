@@ -893,7 +893,15 @@ footer > p {
     margin-bottom: 10px;
 }
 
-nav {
+.navigator2 {
+    display: none;
+}
+
+.menu2 {
+    display: none;
+}
+
+.navigator {
     width: 100vw; height: 40px;
     background-color: white;
     padding-top: 8px;

@@ -38,79 +38,81 @@ header {
 }
 
 .divShop {
-    justify-self: center;
+    justify-self: end;
     grid-column: 4/5;
     grid-row: 1/2;
 }
 
-.navHamburguer {
+.navHamburguer2 {
     height: 40px;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     gap: 10px;
-    padding-top: 5px;
     padding-left: 15px;
 }
 
 .navigator {
-    padding: 0;
-    display: block;
-}
-
-.menu {
-    height: auto;
-    position: relative;
-    top: -3%;
-    left: 0;
-    z-index: 10;
-    padding: 0;
-    margin-top: 1px;
     display: none;
 }
 
-.menuli {
+.navigator2 {  
+    display: block;
+    margin-bottom: 7px;
     width: 100vw; 
+    background-color: white;
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.132);
+}
+
+.menu2 {
+    display: block;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s linear;
+}
+
+.menuli2 {
+    width: 100%; 
     margin-right: 0;
     background-color: white;
-    clear: left;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.135);
-    position: relative;
     box-sizing: content-box;
+    text-align: center;
+    cursor: pointer;
+    color: var(--textColor);
+    padding-top: 12px;
 }
 
-.submenu {
-    width: auto;
-    height: auto;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    border-radius: 0;
+.menuli2 > p {
+    margin-bottom: 12px;
+}
+
+.submenu2 {
     padding: 0;
-    z-index: 40;
-    background-color: white;
     display: block;
-    transform: scale(0);
-    border-bottom: 5px solid var(--headerColor);
+    border-top: 1px solid rgba(0, 0, 0, 0.135);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s linear;
 }
 
-.submenu > li {
-    width: 100vw;
+.submenu2 > li {
+    width: 100%;
     height: 40px;
-    position: relative;
     background-color: var(--submenuResponsiveColor);
+    margin-bottom: 2px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.091);
 }
 
-.submenu > li > a {
+.submenu2 > li a {
+    cursor: pointer;
+    color: var(--textColor);
+    display: block;
+    width: 100%; height: 100%;
     text-align: center;
     padding-top: 8px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.135);
     background-color: rgb(245, 245, 245);
 }
 
@@ -118,9 +120,18 @@ header {
     left: 0;
 }
 
-.menuli:hover {
+.menuli2:hover {
     color: var(--headerColor);
     border-bottom: none;
+}
+
+.submenu2 > li a:link, .submenu2 > li a:visited, .submenu2 > li a:active {
+    text-decoration: none;
+    color: var(--textColor);
+}
+
+.submenu2 > li a:hover {
+    color: var(--headerColor);
 }
 
 .btnFinalizarCompra {
