@@ -122,6 +122,58 @@
         </ul>
     </nav>
 
+    <nav class="navigator2">
+        <div class="navHamburguer2">
+            <span><i class="fa-solid fa-bars"></i></span>
+            <span>menu</span>
+            <span><i class="fa-solid fa-chevron-down spanSeta"></i></span>
+        </div>       
+        <ul type="none" class="menu2">
+            <li class="menuli2"><p>celulares</p>
+                <ul type="none" class="submenu2">
+                    <li><a href="#">smartphones</a></li>
+                    <li><a href="#">iphones</a></li>
+                    <li><a href="#">tecnologia 5g</a></li>
+                    <li><a href="#">acessórios pra celular</a></li>
+                    <li><a href="#">peças pra celular</a></li>
+                </ul>
+            </li>
+            <li class="menuli2"><p>eletrodomésticos</p>
+                <ul type="none" class="submenu2">
+                    <li><a href="#">aquecedores</a></li>
+                    <li><a href="#">geladeira</a></li>
+                    <li><a href="#">máquina de lavar</a></li>
+                    <li><a href="#">fogão</a></li>
+                    <li><a href="#">microondas</a></li>
+                </ul type="none">
+            </li>
+            <li class="menuli2"><p>informática</p>
+                <ul type="none" class="submenu2">
+                    <li><a href="cat_notebooks.php" target="_self">notebook</a></li>
+                    <li><a href="#">notebook gamer</a></li>
+                    <li><a href="#">computador</a></li>
+                    <li><a href="#">computador gamer</a></li>
+                </ul>
+            </li>
+            <li class="menuli2"><p>smart tv</p>
+                <ul type="none" class="submenu2">
+                    <li><a href="#">smart tv</a></li>
+                    <li><a href="#">home theater</a></li>
+                    <li><a href="#">acessórios pra tv</a></li>
+                </ul>
+            </li>
+            <li class="menuli2"><p>movéis</p>
+                <ul type="none" class="submenu2">
+                    <li><a href="#">armário</a></li>
+                    <li><a href="#">sofá</a></li>
+                    <li><a href="#">cama</a></li>
+                    <li><a href="#">cadeira de escritório</a></li>
+                    <li><a href="#">mesa</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
     <div class="banner">
         <picture>
             <source media="(max-width: 480px)" srcset="images/carousel/banner2.png" type="image/png" class="bannerImgPequeno">
