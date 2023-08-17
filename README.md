@@ -2,25 +2,29 @@
 
 ### Site realizado em PDO com algumas funcionalidades:
 
-* Funçoes Genericas
-* Pagina Notebooks
-* Pagina de produto unico (Notebooks e index) / passando informações codeproduto e categoria por URL por JS
-* Produtos recomendados, limitedrows
-* Perguntas sobre produto, ajax. Não envia vazio e so aparece form para logados
-* Ajax requisição assincrona de email (cadastro)
-* Gif criado em css para loading de requisição email (cadastro, alterar senha)
-* Email para troca de status
-* Senha criptografada
-* Ajax requisição assincrona de email(esqueceu senha, alterar senha)
+#### PHP/PDO E JS
+* Código Reutilizavel com funções POO em PHP
+* Pode ser acessada uma página esclusiva para Notebooks no Menu
+* Produtos recomendados, com PHP e limitedrows incluso
 * Alteração de senha por 'esqueci minha senha' (email)
 * Alteração de senha com usuario logado (email)
-* Cadastro e login com Google API
-* Ajax pesquisa em tempo real /botão pesquisa normal
-* Ajax para botões de compra
-* Ajax para efeito de contador
-* API para pegar Cep
+* Envio de email apra confirmação e entrada no site. Troca de status no Banco sql
+* Senha criptografada no Banco sql
+* Uma pagina unica de produto para cada item, puxados com GET (JS e PHP) de forma simples, onde uma pagina HTML corresponde a qualquer produto do site. 
 
-### Algumas imagens de demonstração
+#### AJAX/FETCH API
+* Perguntas sobre produto, via Ajax. Não envia vazio e so aparece form para usuarios logados
+* Ajax requisição assincrona de email (cadastro, esqueceu senha, alterar senha)
+* Ajax pesquisa de produtos em tempo real, sem recarregar a pagina.
+* Ajax para botões de compra em tempo real
+* Ajax para efeito de contador
+* Gif criado em CSS para loading de requisição email (cadastro, alterar senha)
+
+#### API'S
+* Cadastro e login com Google API com JS, PHP e JSON. Dados são criptografados na URL também
+* API para pegar Cep em JS
+
+#### Algumas imagens de demonstração
 
 <div>
 <img src="images/demo/Screenshot_1.png" width="400px" height="200px"/>
