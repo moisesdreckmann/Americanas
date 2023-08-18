@@ -2,6 +2,8 @@
 
 ### Site realizado em PDO com algumas funcionalidades:
 
+* Site totalmente responsivo, utilizando media queries, flexbox, e grid layout
+
 #### PHP/PDO E JS
 * Código Reutilizavel com funções POO em PHP
 * Pode ser acessada uma página esclusiva para Notebooks no Menu
