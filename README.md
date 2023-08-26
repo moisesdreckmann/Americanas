@@ -29,22 +29,22 @@
 #### Demonstração:
 
 <p align="center">
-    <img src="images/demo/ADD1.gif" width="600px" height="300px"/> 
+    <img src="images/demo/ADD1.gif" width="600px" height="400px"/> 
 </p>
 
 <br> 
 <p align="center">
-    <img src="images/demo/ADD2.gif" width="600px" height="300px"/>
+    <img src="images/demo/ADD2.gif" width="600px" height="400px"/>
 </p>
   
 <br> 
 <p align="center">
-    <img src="images/demo/ADD3.gif" width="600px" height="300px"/> 
+    <img src="images/demo/ADD3.gif" width="600px" height="400px"/> 
 </p>
  
 <br> 
 <p align="center">
-    <img src="images/demo/ADD4.gif" width="600px" height="300px"/>  
+    <img src="images/demo/ADD4.gif" width="600px" height="400px"/>  
 </p>
 
  
