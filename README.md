@@ -26,7 +26,7 @@
 * Cadastro e login com Google API com JS, PHP e JSON. Dados são criptografados na URL também
 * API para pegar Cep em JS
 
-#### Algumas imagens de demonstração
+#### Demonstração:
 
 <p align="center">
     <img src="images/demo/ADD1.gif" width="600px" height="300px"/> 
