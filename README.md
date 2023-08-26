@@ -28,10 +28,24 @@
 
 #### Algumas imagens de demonstração
 
-<div>
-<img src="images/demo/Screenshot_1.png" width="400px" height="200px"/>
-<img src="images/demo/Screenshot_2.png" width="400px" height="200px"/>
-<img src="images/demo/Screenshot_3.png" width="400px" height="200px"/>
-<img src="images/demo/Screenshot_4.png" width="400px" height="200px"/>
-<img src="images/demo/Screenshot_5.png" width="400px" height="200px"/>
-</div>
+<p text-align="center">
+    <img src="ADD1.gif" width="600px" height="300px"/> 
+</p>
+
+<br> 
+<p text-align="center">
+    <img src="ADD2.gif" width="600px" height="300px"/>
+</p>
+  
+<br> 
+<p text-align="center">
+    <img src="ADD3.gif" width="600px" height="300px"/> 
+</p>
+ 
+<br> 
+<p text-align="center">
+    <img src="ADD4.gif" width="600px" height="300px"/>  
+</p>
+
+ 
+
